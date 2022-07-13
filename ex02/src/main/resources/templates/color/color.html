@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>색상 선택</title>
+</head>
+<body>
+<form action="/ex/likeColor" name="colorForm">
+    <input type="text" placeholder="색상을 선택하세요." name="color">
+    <input type="button" onclick="send()" value="제출">
+</form>
+</body>
+<script>
+    function send() {
+        if(!colorForm.color.value){
+            alert("색상을 입력하세요");
+            return;
+        }
+        colorForm.submit();
+    }
+</script>
+</html>

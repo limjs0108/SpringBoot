@@ -1,0 +1,11 @@
+mapper.xml	: sql문 작성
+Mapper.java	: 1:1 매핑(mapper.xml과 매핑) RDB성격을 띔
+DAO.java		: @Repositroy : RDB 중심에서 객체지향으로 오겠다
+		: 객체 지향 중심의 설계 반영
+Service.java	: 재사용의 목적
+ServiceImpl.java	: 하나의 서비스를 구현하기 위해 필요한 쿼리를 묶기 위해 사용
+Controller.java	: 사용자의 요청(URL)에 대한 알맞는 비지니스 로직(알고리즘)을 작성한 뒤 응답
+
+FROM > ON > WHERE > SELECT > ORDER BY
+
+JOIN 때 선행테이블 잘 선택해야함
